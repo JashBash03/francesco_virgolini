@@ -17,4 +17,4 @@ MonoBehaviour:
   breakPower: 2
   handbreakPower: 1
   maxSpeed: 50
-  groundFriction: 0.02
+  groundFriction: 1
