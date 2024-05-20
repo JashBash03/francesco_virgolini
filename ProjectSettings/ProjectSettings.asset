@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 27
-  productGUID: d6b48ea2b7dbc2347a84e240e8d5b330
+  productGUID: 88507c8507962bb4b8b7e35f46e79de5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: barquito_pelotudo
+  productName: Drift(dam1) NO BORRAR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -156,7 +156,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.Drift-dam1--NO-BORRAR
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -764,14 +765,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: barquito_pelotudo
+  metroPackageName: Drift(dam1) NO BORRAR
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: barquito_pelotudo
+  metroApplicationDescription: Drift(dam1) NO BORRAR
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -838,13 +839,13 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3924baaf-0ebc-40d3-a605-c5dd37f9e1c8
+  cloudProjectId: 957fb2b2-932e-4e68-b3d8-085d48de8d35
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: barquito_pelotudo
-  organizationId: jash_bash
+  projectName: Drift(dam1) NO BORRAR
+  organizationId: delacorte19
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
