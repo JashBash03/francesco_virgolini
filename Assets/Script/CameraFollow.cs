@@ -27,7 +27,6 @@ public class CameraFollow : MonoBehaviour
             followPlayerSmooth
         );
         transform.LookAt(PlayerTr.position);
-        //transform.rotation = Quaternion.AngleAxis(Input.GetAxis("Horizontal") * rotationSmooth, Vector3.up) * offset;
     }
    
 }

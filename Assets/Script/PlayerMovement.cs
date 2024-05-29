@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Velocidades")]
     [SerializeField] float speed;
     [SerializeField] float maxSpeed;
-    
+
     [Header("Giro")]
     [SerializeField] Vector3 normalSpin;
     [SerializeField] Vector3 handBreakSpin;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-       
+
         forwardParticles.Stop();
         leftParticles.Stop();
         rightParticles.Stop();
@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
         ////Frenado////
         HandBreak = Input.GetKey(KeyCode.Space);
-        
+
         ////Particulas////
         if (Input.GetKeyDown(KeyCode.W))
             forwardParticles.Play();
@@ -102,11 +102,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        
-        if(movement.x < 0)
+
+        if (movement.x < 0)
         {
 
-            if(transform.InverseTransformDirection(rb.velocity).z < 0)
+            if (transform.InverseTransformDirection(rb.velocity).z < 0)
             {
                 rb.velocity -= speed * Time.fixedDeltaTime * transform.forward;
             }
@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
                         rb.velocity.x / (1 + handBreakStrenth * Time.fixedDeltaTime),
                         rb.velocity.y,
                         rb.velocity.z / (1 + handBreakStrenth * Time.fixedDeltaTime));
-            
+
             for (int i = 0; i < drifftSpawn.Count; i++)
             {
                 GameObject drifftInstance = Instantiate(drifftPF,
@@ -136,12 +136,12 @@ public class PlayerMovement : MonoBehaviour
                 Destroy(drifftInstance, 0.5f);
             }
         }
-        
 
-        if(movement.y < 0)
+
+        if (movement.y < 0)
         {
             rb.angularVelocity -= new Vector3(
-                rb.angularVelocity.x ,
+                rb.angularVelocity.x,
                 rb.angularVelocity.y - normalSpin.y);
 
             if (HandBreak)
@@ -152,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if(movement.y > 0)
+        if (movement.y > 0)
         {
             rb.angularVelocity -= new Vector3(
                 rb.angularVelocity.x,
@@ -180,15 +180,15 @@ public class PlayerMovement : MonoBehaviour
                 (rb.velocity.z / (1 + friction * Time.deltaTime)));
             //print(friccion);
             forwardParticles.Stop();
-            
+
         }
 
         if (rb.velocity.x >= maxSpeed || rb.velocity.z >= maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
-         
+
         }
-        
+
     }
 
 }
